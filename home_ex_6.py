@@ -8,7 +8,7 @@ my_dict.update(
         'Joka':2001
     }
 )
-my_dict.pop('Egor')
+print(my_dict.pop('Egor'))
 print(my_dict)
 
 my_set = {1, 'Joka', True, 2.13}
