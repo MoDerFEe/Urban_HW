@@ -11,7 +11,7 @@ for i in grades:
 j=0
 book={}
 
-for i in students:
+for i in sort_stu:
     book[i] = ave_grades[j]
     j+=1
 
