@@ -7,6 +7,5 @@ while j < len(a):
         j += 1
     elif a[j] == 0:
         j += 1
-        continue
     else:
         break
