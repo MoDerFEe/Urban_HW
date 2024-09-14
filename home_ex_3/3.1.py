@@ -8,6 +8,8 @@ def count_calls():
 
 def is_contains(string, list_to_search):
     count_calls()
+    for i in range(len(list_to_search)):
+        list_to_search[i] = list_to_search[i].lower()
     if string.lower() in list_to_search:
         return True
     else:
@@ -19,6 +21,7 @@ def string_info(word):
     mass = (len(word), word.upper(), word.lower())
     return mass
 
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
 
 try:
     k = int(input('Повторить раз: '))
@@ -30,7 +33,7 @@ try:
         l = int(input('Слов в словаре: '))
         mass = []
         for j in range(l):
-            mass.append((str(input(f'{j + 1} слово в словаре: '))).lower())
+            mass.append(str(input(f'{j + 1} слово в словаре: ')))
         print(is_contains(a, mass))
     print(calls)
 except:
