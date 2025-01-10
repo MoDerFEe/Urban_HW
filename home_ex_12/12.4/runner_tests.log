@@ -1,0 +1,21 @@
+2025-01-11 01:35:03,137 | INFO | "test_challenge" выполнен успешно | 12.4 | test_challenge
+2025-01-11 01:35:03,138 | WARNING | Неверный тип данных для объекта Runner 
+Имя может быть только строкой, передано list | 12.4 | test_run
+Traceback (most recent call last):
+  File "E:\Мои проекты\урбан\home_ex_12\12.4\12.4.py", line 23, in test_run
+    test_2 = Runner(['test_2', ])
+  File "E:\Мои проекты\урбан\home_ex_12\12.4\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано list
+2025-01-11 01:35:03,139 | WARNING | Неверная скорость для Runner 
+50 != -50 | 12.4 | test_walk
+Traceback (most recent call last):
+  File "E:\Мои проекты\урбан\home_ex_12\12.4\12.4.py", line 15, in test_walk
+    self.assertEqual(test_1.distance, -50)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moder\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 907, in assertEqual
+    assertion_func(first, second, msg=msg)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\moder\AppData\Local\Programs\Python\Python313\Lib\unittest\case.py", line 900, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 50 != -50
